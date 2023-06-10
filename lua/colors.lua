@@ -1,4 +1,4 @@
-function colorMyThing(color)
+local function colorMyThing(color)
 	color = color or 'tokyonight-night'
 	vim.cmd.colorscheme(color)
 
