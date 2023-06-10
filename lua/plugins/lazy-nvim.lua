@@ -11,18 +11,14 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 require('lazy').setup({
-	{
-		'williamboman/mason.nvim',
-		build = ':MasonUpdate' -- :MasonUpdate updates registry contents
-	},
-	{
-		'folke/tokyonight.nvim',
-		lazy = false,
-		priority = 1000,
-		opts = {},
-	},
-	{
-		'nvim-treesitter/nvim-treesitter',
-		build = ':TSUpdate'
-	}
+{
+	'folke/tokyonight.nvim',
+	lazy = false,
+	priority = 1000,
+	opts = {},
+},
+{
+	'nvim-treesitter/nvim-treesitter',
+	build = ':TSUpdate'
+}
 })
