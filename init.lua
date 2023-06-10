@@ -1,4 +1,7 @@
 require('remaps')
+require('settings')
 require('plugins.lazy-nvim')
-require('plugins.mason')
 require('colors')
+require('plugins.treesitter')
+require('plugins.mason')
+require('lsp.lsp-zero')
