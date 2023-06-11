@@ -1,5 +1,6 @@
 # Neovim styff:
 lazy-lock.json
+.luarc*
 
 # Compiled Lua sources
 luac.out
