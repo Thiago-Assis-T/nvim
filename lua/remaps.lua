@@ -1,2 +1,2 @@
 vim.g.mapleader = ' '
-vim.keymap.set('n', '<leader>e', ':NvimTreeToggle 25<cr>')
+vim.api.nvim_set_keymap("n", "<leader>e", ":NvimTreeToggle<cr>", {silent = true, noremap = true})
