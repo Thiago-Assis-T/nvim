@@ -2,10 +2,16 @@ local function colorMyThing(color)
    color = color or 'tokyonight-night'
    vim.cmd.colorscheme(color)
 
-   vim.api.nvim_set_hl(0, 'Normal', {bg = 'none'})
-   vim.api.nvim_set_hl(0, 'NormalFloat', {bg = 'none'})
-   vim.cmd.highlight('SignColumn guibg=transparent')
-   vim.cmd.highlight('StatusLine guibg=transparent')
+   vim.api.nvim_set_hl(0, 'Normal', {bg = 'none', ctermbg = 'none' })
+   vim.api.nvim_set_hl(0, 'NormalFloat', {bg = 'none', ctermbg = 'none' })
+   vim.api.nvim_set_hl(0, 'NormalNC', {bg = 'none', ctermbg = 'none' })
+   vim.api.nvim_set_hl(0, 'WinSeparator', {bg = 'none', ctermbg = 'none' })
+   vim.api.nvim_set_hl(0, 'StatusLine', {bg = 'none', ctermbg = 'none' })
+   vim.api.nvim_set_hl(0, 'StatusLineNC', {bg = 'none', ctermbg = 'none' })
+   vim.api.nvim_set_hl(0, 'SignColumn', {bg = 'none', ctermbg = 'none' })
+   vim.api.nvim_set_hl(0, 'NeoTreeNormal', { bg = 'none', ctermbg = 'none' })
+   vim.api.nvim_set_hl(0, 'NeoTreeNormalNC', { bg = 'none', ctermbg = 'none' })
+
 end
 
 colorMyThing()

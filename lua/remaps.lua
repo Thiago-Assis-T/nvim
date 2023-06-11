@@ -1,2 +1,2 @@
 vim.g.mapleader = ' '
-vim.keymap.set('n', '<leader>e', ':Lex 25<cr>')
+vim.api.nvim_set_keymap("n", "<leader>e", ":Neotree toggle<cr>", {silent = true, noremap = true})

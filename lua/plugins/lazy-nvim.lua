@@ -22,6 +22,14 @@ require('lazy').setup({
       'neovim/nvim-lspconfig',
    },
    {
+      'nvim-neo-tree/neo-tree.nvim',
+      dependencies = {
+         'nvim-lua/plenary.nvim',
+         'nvim-tree/nvim-web-devicons',
+         'MunifTanjim/nui.nvim'
+      }
+   },
+   {
       'folke/tokyonight.nvim',
       lazy = false,
       priority = 1000,
