@@ -12,6 +12,9 @@ end
 vim.opt.rtp:prepend(lazypath)
 require('lazy').setup({
    {
+      'neovim/nvim-lspconfig',
+   },
+   {
       'williamboman/mason.nvim',
       build = ':MasonUpdate' -- :MasonUpdate updates registry contents
    },
@@ -19,7 +22,13 @@ require('lazy').setup({
       'williamboman/mason-lspconfig.nvim',
    },
    {
-      'neovim/nvim-lspconfig',
+      'hrsh7th/nvim-cmp'
+   },
+   {
+      'hrsh7th/cmp-nvim-lsp'
+   },
+   {
+      'L3MON4D3/LuaSnip'
    },
    {
       'nvim-neo-tree/neo-tree.nvim',
