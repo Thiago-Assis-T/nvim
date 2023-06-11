@@ -1,5 +1,15 @@
 require("neo-tree").setup({
    default_component_configs = {
+      filesystem = {
+         filtered_items = {
+            visible = true, 
+            hide_dotfiles = false,
+            hide_gitignored = false,
+            hide_by_name = {
+               "node_modules"
+            },
+         },
+      },
       icon = {
          folder_empty = "󰜌",
          folder_empty_open = "󰜌",
@@ -40,7 +50,6 @@ require("neo-tree").setup({
    },
    -- Other options ...
    event_handlers = {
-
       {
          event = "file_opened",
          handler = function(file_path)
