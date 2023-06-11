@@ -22,11 +22,12 @@ require('lazy').setup({
       'neovim/nvim-lspconfig',
    },
    {
-      "nvim-tree/nvim-tree.lua",
-      version = "*",
+      'nvim-neo-tree/neo-tree.nvim',
       dependencies = {
-         "nvim-tree/nvim-web-devicons",
-      },
+         'nvim-lua/plenary.nvim',
+         'nvim-tree/nvim-web-devicons',
+         'MunifTanjim/nui.nvim'
+      }
    },
    {
       'folke/tokyonight.nvim',
