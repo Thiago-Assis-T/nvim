@@ -2,12 +2,10 @@ require("neo-tree").setup({
    default_component_configs = {
       filesystem = {
          filtered_items = {
-            visible = true, 
+            visible = false, -- when true, they will just be displayed differently than normal items
             hide_dotfiles = false,
             hide_gitignored = false,
-            hide_by_name = {
-               "node_modules"
-            },
+            hide_hidden = false, -- only works on Windows for hidden files/directories
          },
       },
       icon = {
