@@ -31,6 +31,12 @@ require('lazy').setup({
       'L3MON4D3/LuaSnip'
    },
    {
+      'jose-elias-alvarez/null-ls.nvim',
+      dependencies ={
+         'nvim-lua/plenary.nvim'
+      }
+   },
+   {
       'nvim-neo-tree/neo-tree.nvim',
       dependencies = {
          'nvim-lua/plenary.nvim',
