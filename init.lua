@@ -1,4 +1,4 @@
-require("plugins")
-require("colors")
-require("remaps")
-require("settings")
+require('plugins')
+require('colors')
+require('remaps')
+require('settings')
