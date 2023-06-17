@@ -1,9 +1,8 @@
 -- Utilities for creating configurations
 local util = require('formatter.util')
+local cmd = vim.cmd
 
 -- Creating Format on Save functionality:
-
-local cmd = vim.cmd
 cmd([[
 augroup FormatAutogroup
   autocmd!

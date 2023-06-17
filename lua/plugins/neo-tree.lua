@@ -15,7 +15,7 @@ require('neo-tree').setup({
             },
         },
         icon = { folder_empty = '', folder_empty_open = '' },
-        git_status = { symbols = { renamed = '󰑕', unstaged = '' } },
+        git_status = { symbols = { added = '', renamed = '󰑕', unstaged = '' } },
     },
     document_symbols = {
         kinds = {
