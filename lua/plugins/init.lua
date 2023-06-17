@@ -1,5 +1,5 @@
 require("plugins.lazy-nvim")
-require("plugins.lua-line")
+require("plugins.lualine")
 require("plugins.neo-tree")
 require("plugins.treesitter")
 require("plugins.lsp")
