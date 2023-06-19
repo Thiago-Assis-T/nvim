@@ -1,14 +1,15 @@
 -- Utilities for creating configurations
-local util = require('formatter.util')
 local cmd = vim.cmd
+local api = vim.api
 
 -- Creating Format on Save functionality:
-cmd([[
-augroup FormatAutogroup
-  autocmd!
-  autocmd BufWritePost * FormatWrite
-augroup END
-]])
+api.nvim_create_autocmd('BufWritePre', {
+    callback = function()
+        vim.schedule(function()
+            cmd('FormatWrite')
+        end)
+    end,
+})
 
 -- Provides the Format, FormatWrite, FormatLock, and FormatWriteLock commands
 require('formatter').setup({
