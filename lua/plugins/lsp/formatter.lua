@@ -26,12 +26,11 @@ require('formatter').setup({
          -- "lua" filetype
          require('formatter.filetypes.lua').stylua,
       },
-
-      c = {
-         require('formatter.filetypes.c').clangformat,
+      html = {
+         require('formatter.filetypes.html').prettierd,
       },
-      cpp = {
-         require('formatter.filetypes.cpp').clangformat,
+      css = {
+         require('formatter.filetypes.css').prettierd,
       },
 
       -- Use the special "*" filetype for defining formatter configurations on
