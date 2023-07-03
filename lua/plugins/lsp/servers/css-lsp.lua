@@ -13,4 +13,7 @@ require('lspconfig').cssls.setup({
    scss = {
       validate = true,
    },
+   sass = {
+      validate = true,
+   },
 })
