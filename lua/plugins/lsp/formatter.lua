@@ -33,16 +33,16 @@ require('formatter').setup({
          require('formatter.filetypes.css').prettierd,
       },
       javascript = {
-         require('formatter.filetypes.javascript').prettierd,
+         require('formatter.filetypes.javascript').eslint_d,
       },
       javascriptreact = {
-         require('formatter.filetypes.javascriptreact').prettierd,
+         require('formatter.filetypes.javascriptreact').eslint_d,
       },
       typescript = {
-         require('formatter.filetypes.typescript').prettierd,
+         require('formatter.filetypes.typescript').eslint_d,
       },
       typescriptreact = {
-         require('formatter.filetypes.typescriptreact').prettierd,
+         require('formatter.filetypes.typescriptreact').eslint_d,
       },
 
       -- Use the special "*" filetype for defining formatter configurations on

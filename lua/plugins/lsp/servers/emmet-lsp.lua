@@ -6,11 +6,8 @@ lspconfig.emmet_ls.setup({
    -- on_attach = on_attach,
    capabilities = capabilities,
    filetypes = {
-      'css',
       'html',
-      'less',
-      'sass',
-      'scss',
+      'css',
    },
    init_options = {
       html = {
