@@ -32,6 +32,18 @@ require('formatter').setup({
       css = {
          require('formatter.filetypes.css').prettierd,
       },
+      javascript = {
+         require('formatter.filetypes.javascript').prettierd,
+      },
+      javascriptreact = {
+         require('formatter.filetypes.javascriptreact').prettierd,
+      },
+      typescript = {
+         require('formatter.filetypes.typescript').prettierd,
+      },
+      typescriptreact = {
+         require('formatter.filetypes.typescriptreact').prettierd,
+      },
 
       -- Use the special "*" filetype for defining formatter configurations on
       -- any filetype
