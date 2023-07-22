@@ -11,18 +11,16 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 require('lazy').setup({
-   { 'lewis6991/gitsigns.nvim' },
-   { 'mfussenegger/nvim-lint' },
-   {
-      'nvim-lualine/lualine.nvim',
-      dependencies = { 'nvim-tree/nvim-web-devicons' },
-   },
    {
       'williamboman/mason.nvim',
       build = ':MasonUpdate', -- :MasonUpdate updates registry contents
-      dependencies = { 'neovim/nvim-lspconfig' },
+      dependencies = { 'neovim/nvim-lspconfig', 'williamboman/mason-lspconfig.nvim' },
    },
-   { 'williamboman/mason-lspconfig.nvim' },
+   { 'lewis6991/gitsigns.nvim' },
+   { 'mfussenegger/nvim-lint' },
+   { 'mhartington/formatter.nvim' },
+   { 'nvim-lualine/lualine.nvim', dependencies = { 'nvim-tree/nvim-web-devicons' } },
+
    {
       'hrsh7th/nvim-cmp',
       dependencies = {
@@ -42,16 +40,20 @@ require('lazy').setup({
       },
    },
    {
-      'mhartington/formatter.nvim',
+      'nvim-treesitter/nvim-treesitter',
+      build = ':TSUpdate',
    },
+   { 'folke/tokyonight.nvim' },
+   { 'nvim-telescope/telescope-fzf-native.nvim', build = 'make', lazy = false },
    {
-      'nvim-neo-tree/neo-tree.nvim',
+      'nvim-telescope/telescope.nvim',
       dependencies = {
          'nvim-lua/plenary.nvim',
          'nvim-tree/nvim-web-devicons',
-         'MunifTanjim/nui.nvim',
+         {
+            'nvim-treesitter/nvim-treesitter',
+            build = ':TSUpdate',
+         },
       },
    },
-   { 'folke/tokyonight.nvim', lazy = false, priority = 1000, opts = {} },
-   { 'nvim-treesitter/nvim-treesitter', build = ':TSUpdate' },
 })

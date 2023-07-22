@@ -1,2 +1,2 @@
 vim.g.mapleader = ' '
-vim.api.nvim_set_keymap('n', '<leader>e', ':Neotree toggle<cr>', { silent = true, noremap = true })
+vim.api.nvim_set_keymap('n', '<leader>ff', '<cmd>Telescope find_files<cr>', { silent = true, noremap = true })
