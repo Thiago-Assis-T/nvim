@@ -13,7 +13,7 @@ vim.opt.rtp:prepend(lazypath)
 require('lazy').setup({
    {
       'williamboman/mason.nvim',
-      build = ':MasonUpdate', -- :MasonUpdate updates registry contents
+      build = ':MasonUpdate',
       dependencies = {
          'WhoIsSethDaniel/mason-tool-installer.nvim',
          'neovim/nvim-lspconfig',

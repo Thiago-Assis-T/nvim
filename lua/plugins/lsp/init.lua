@@ -1,4 +1,5 @@
 require('plugins.lsp.mason')
+require('plugins.lsp.global-lsp-config')
 require('plugins.lsp.servers')
 require('plugins.lsp.linter')
 require('plugins.lsp.formatter')
