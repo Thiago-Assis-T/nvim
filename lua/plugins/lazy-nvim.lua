@@ -14,7 +14,11 @@ require('lazy').setup({
    {
       'williamboman/mason.nvim',
       build = ':MasonUpdate', -- :MasonUpdate updates registry contents
-      dependencies = { 'neovim/nvim-lspconfig', 'williamboman/mason-lspconfig.nvim' },
+      dependencies = {
+         'WhoIsSethDaniel/mason-tool-installer.nvim',
+         'neovim/nvim-lspconfig',
+         'williamboman/mason-lspconfig.nvim',
+      },
    },
    { 'lewis6991/gitsigns.nvim' },
    { 'mfussenegger/nvim-lint' },
