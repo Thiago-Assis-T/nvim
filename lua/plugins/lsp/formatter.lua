@@ -1,12 +1,12 @@
 -- Utilities for creating configurations
--- local cmd = vim.cmd
+local cmd = vim.cmd
 local api = vim.api
 
 -- Creating Format on Save functionality:
 api.nvim_create_autocmd('BufWritePre', {
    callback = function()
       vim.schedule(function()
-         vim.lsp.buf.format({ async = true })
+         cmd('FormatWrite')
       end)
    end,
 })
@@ -43,6 +43,9 @@ require('formatter').setup({
       },
       typescriptreact = {
          require('formatter.filetypes.typescriptreact').eslint_d,
+      },
+      json = {
+         require('formatter.filetypes.json').prettierd,
       },
 
       -- Use the special "*" filetype for defining formatter configurations on

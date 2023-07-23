@@ -20,6 +20,8 @@ require('mason-tool-installer').setup({
       'eslint',
       'stylelint_lsp',
       'jsonls',
+      'cssls',
+      'html',
    },
    auto_update = true,
 })
