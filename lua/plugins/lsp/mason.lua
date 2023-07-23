@@ -19,6 +19,7 @@ require('mason-tool-installer').setup({
       'tsserver',
       'eslint',
       'stylelint_lsp',
+      'jsonls',
    },
    auto_update = true,
 })
