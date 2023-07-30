@@ -47,6 +47,9 @@ require('formatter').setup({
       json = {
          require('formatter.filetypes.json').prettierd,
       },
+      bash = {
+         require('formatter.filetypes.sh').shfmt,
+      },
 
       -- Use the special "*" filetype for defining formatter configurations on
       -- any filetype

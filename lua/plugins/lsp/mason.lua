@@ -22,6 +22,10 @@ require('mason-tool-installer').setup({
       'jsonls',
       'cssls',
       'html',
+      'bashls',
+      'shellharden',
+      'shellcheck',
+      'custom-elements-languageserver',
    },
    auto_update = true,
 })
