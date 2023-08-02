@@ -1,5 +1,5 @@
 require('nvim-treesitter.configs').setup({
-   modules = 'none',
+   modules = { 'none' },
    -- A list of parser names, or 'all' (the five listed parsers should always be installed)
    ensure_installed = { 'lua', 'html', 'css', 'javascript', 'typescript', 'markdown', 'c', 'make' },
 
