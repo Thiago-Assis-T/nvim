@@ -4,6 +4,10 @@ capabilities.textDocument.completion.completionItem.snippetSupport = true
 
 lspconfig.emmet_ls.setup({
    capabilities = capabilities,
+   file_types = {
+      'html',
+      'css',
+   },
    init_options = {
       html = {
          options = {
