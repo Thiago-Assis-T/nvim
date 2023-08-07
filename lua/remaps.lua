@@ -1,4 +1,5 @@
 vim.g.mapleader = ' '
+vim.g.maplocalleader = ' '
 local opts = { silent = true, noremap = true }
 -- Telescope Remaps:
 vim.api.nvim_set_keymap('n', '<leader>f', '<cmd>Telescope find_files<cr>', opts)
