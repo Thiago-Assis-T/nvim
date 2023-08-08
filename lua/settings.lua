@@ -29,4 +29,5 @@ vim.opt.clipboard = 'unnamedplus'
 vim.opt.cmdheight = 2
 vim.opt.completeopt = { 'menuone', 'noselect' }
 vim.opt.conceallevel = 0
+vim.spelllang = 'en_ca'
 vim.opt.fileencoding = 'utf-8'

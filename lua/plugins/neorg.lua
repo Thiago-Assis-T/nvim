@@ -1,11 +1,16 @@
 require('neorg').setup({
    load = {
       ['core.defaults'] = {}, -- Loads default behaviour
-      ['core.concealer'] = {}, -- Adds pretty icons to your documents
+      ['core.concealer'] = { -- Adds pretty icons to your documents
+         config = {
+            icon_preset = 'diamond',
+         },
+      },
       ['core.dirman'] = { -- Manages Neorg workspaces
          config = {
             workspaces = {
-               test = '~/Desktop/testNotes',
+               Study = '~/Desktop/Notes/Study',
+               Trybe = '~/Desktop/Notes/Trybe',
             },
          },
       },
