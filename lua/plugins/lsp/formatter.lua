@@ -50,6 +50,9 @@ require('formatter').setup({
       bash = {
          require('formatter.filetypes.sh').shfmt,
       },
+      yaml = {
+         require('formatter.filetypes.yaml').prettierd,
+      },
 
       -- Use the special "*" filetype for defining formatter configurations on
       -- any filetype
