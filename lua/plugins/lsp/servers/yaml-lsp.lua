@@ -4,4 +4,9 @@ capabilities.textDocument.completion.completionItem.snippetSupport = true
 
 lspconfig.yamlls.setup({
    capabilities = capabilities,
+   settings = {
+      yaml = {
+         keyOrdering = false,
+      },
+   },
 })
