@@ -11,6 +11,7 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 require('lazy').setup({
+   { 'catppuccin/nvim', name = 'catppuccin', priority = 1000 },
    {
       'williamboman/mason.nvim',
       build = ':MasonUpdate',
@@ -68,8 +69,5 @@ require('lazy').setup({
       'nvim-neorg/neorg',
       build = ':Neorg sync-parsers',
       dependencies = { 'nvim-lua/plenary.nvim' },
-      config = function()
-         require('neorg').setup({})
-      end,
    },
 })

@@ -1,5 +1,5 @@
 local function colorMyThing(color)
-   color = color or 'tokyonight-night'
+   color = color or 'catppuccin-mocha'
    vim.cmd.colorscheme(color)
 
    vim.api.nvim_set_hl(0, 'Normal', { bg = 'none', ctermbg = 'none' })
@@ -9,6 +9,8 @@ local function colorMyThing(color)
    vim.api.nvim_set_hl(0, 'SignColumn', { bg = 'none', ctermbg = 'none' })
    vim.api.nvim_set_hl(0, 'NeoTreeNormal', { bg = 'none', ctermbg = 'none' })
    vim.api.nvim_set_hl(0, 'NeoTreeNormalNC', { bg = 'none', ctermbg = 'none' })
+
+
 end
 
 colorMyThing()
