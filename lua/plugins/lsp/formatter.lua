@@ -55,6 +55,7 @@ require('formatter').setup({
     },
     go = {
       require('formatter.filetypes.go').gofumpt,
+      require('formatter.filetypes.go').golines,
     },
 
     -- Use the special "*" filetype for defining formatter configurations on
