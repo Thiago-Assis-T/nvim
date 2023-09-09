@@ -3,17 +3,17 @@ local capabilities = vim.lsp.protocol.make_client_capabilities()
 capabilities.textDocument.completion.completionItem.snippetSupport = true
 
 lspconfig.emmet_ls.setup({
-   capabilities = capabilities,
-   file_types = {
-      'html',
-      'css',
-   },
-   init_options = {
-      html = {
-         options = {
-            -- For possible options, see: https://github.com/emmetio/emmet/blob/master/src/config.ts#L79-L267
-            ['bem.enabled'] = true,
-         },
+  capabilities = capabilities,
+  filetypes = {
+    'html',
+    'css',
+  },
+  init_options = {
+    html = {
+      options = {
+        -- For possible options, see: https://github.com/emmetio/emmet/blob/master/src/config.ts#L79-L267
+        ['bem.enabled'] = true,
       },
-   },
+    },
+  },
 })

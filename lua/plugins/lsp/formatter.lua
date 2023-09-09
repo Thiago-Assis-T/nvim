@@ -27,25 +27,25 @@ require('formatter').setup({
       require('formatter.filetypes.lua').stylua,
     },
     html = {
-      require('formatter.filetypes.html').prettierd,
+      require('formatter.filetypes.html').prettier,
     },
     css = {
-      require('formatter.filetypes.css').prettierd,
+      require('formatter.filetypes.css').prettier,
     },
     javascript = {
-      require('formatter.filetypes.javascript').eslint_d,
+      require('formatter.filetypes.javascript').eslint,
     },
     javascriptreact = {
-      require('formatter.filetypes.javascriptreact').eslint_d,
+      require('formatter.filetypes.javascriptreact').eslint,
     },
     typescript = {
-      require('formatter.filetypes.typescript').eslint_d,
+      require('formatter.filetypes.typescript').eslint,
     },
     typescriptreact = {
-      require('formatter.filetypes.typescriptreact').eslint_d,
+      require('formatter.filetypes.typescriptreact').eslint,
     },
     json = {
-      require('formatter.filetypes.json').prettierd,
+      require('formatter.filetypes.json').prettier,
     },
     bash = {
       require('formatter.filetypes.sh').shfmt,
