@@ -10,17 +10,24 @@ require('mason').setup({
 require('mason-lspconfig').setup({})
 require('mason-tool-installer').setup({
   ensure_installed = {
+    -- Go Stuff:
     'gofumpt',
     'golines',
     'goimports',
     'gopls',
     'golangci-lint',
-    'yamlls',
-    'yamllint',
-    'prettier',
+    -- Lua Stuff:
     'luacheck',
     'stylua',
     'lua_ls',
+    -- Shell Scripting stuff:
+    'bashls',
+    'shellharden',
+    'shellcheck',
+    -- Front Garbage Stuff:
+    'yamlls',
+    'yamllint',
+    'prettier',
     'emmet_ls',
     'tsserver',
     'eslint',
@@ -28,9 +35,6 @@ require('mason-tool-installer').setup({
     'jsonls',
     'cssls',
     'html',
-    'bashls',
-    'shellharden',
-    'shellcheck',
   },
   auto_update = true,
 })
