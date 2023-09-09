@@ -12,7 +12,9 @@ require('mason-tool-installer').setup({
   ensure_installed = {
     'gofumpt',
     'golines',
+    'goimports',
     'gopls',
+    'golangci-lint',
     'yamlls',
     'yamllint',
     'eslint_d',
@@ -30,7 +32,6 @@ require('mason-tool-installer').setup({
     'bashls',
     'shellharden',
     'shellcheck',
-    'custom-elements-languageserver',
   },
   auto_update = true,
 })

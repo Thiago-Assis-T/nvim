@@ -68,10 +68,6 @@ cmp.setup({
       return vim_item
     end,
   },
-  experimental = {
-    native_menu = false,
-    ghost_text = true,
-  },
 })
 -- Set up lspconfig.
 local capabilities = require('cmp_nvim_lsp').default_capabilities()
