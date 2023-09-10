@@ -33,16 +33,16 @@ require('formatter').setup({
       require('formatter.filetypes.css').prettier,
     },
     javascript = {
-      require('formatter.filetypes.javascript').eslint,
+      require('formatter.filetypes.javascript').eslint_d,
     },
     javascriptreact = {
-      require('formatter.filetypes.javascriptreact').eslint,
+      require('formatter.filetypes.javascriptreact').eslint_d,
     },
     typescript = {
-      require('formatter.filetypes.typescript').eslint,
+      require('formatter.filetypes.typescript').eslint_d,
     },
     typescriptreact = {
-      require('formatter.filetypes.typescriptreact').eslint,
+      require('formatter.filetypes.typescriptreact').eslint_d,
     },
     json = {
       require('formatter.filetypes.json').prettier,
