@@ -31,7 +31,6 @@ require('mason-tool-installer').setup({
     'emmet_ls',
     'tsserver',
     'eslint',
-    'stylelint_lsp',
     'jsonls',
     'cssls',
     'html',
